@@ -5,7 +5,6 @@ import Header from './components/header/header.component';
 import WelcomePage from './pages/welcome/welcome.component';
 import UsersList from './pages/users-list/users-list.component';
 import UserPage from './pages/user/user.component';
-import EditPage from './pages/edit/edit.component';
 
 import { auth, createUserProfileDocument } from './firebase/firebase.utils';
 
@@ -58,8 +57,6 @@ class App extends React.Component {
         }
         <Switch>
           <Route exact path="/" component={WelcomePage} />
-          {/* <Route exact path="/register" component={RegisterPage} />
-          <Route exact path="/login" component={LoginPage} /> */}
           <Route
             exact
             path="/userslist"
@@ -74,13 +71,13 @@ class App extends React.Component {
               <UserPage {...props} currentUser={currentUser} />
             )}
           />
-          <Route
+          {/* <Route
             exact
             path="/edit"
             render={(props) => (
               <EditPage {...props} currentUser={currentUser} />
             )}
-          />
+          /> */}
         </Switch>
       </div>
     );

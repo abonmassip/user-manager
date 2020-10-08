@@ -6,7 +6,7 @@ import {
 
 import './edit.styles.scss';
 
-class EditPage extends React.Component {
+class Edit extends React.Component {
 
   constructor() {
     super();
@@ -39,7 +39,7 @@ class EditPage extends React.Component {
 
     try {
       await editUserProfileDocument(id, {displayName, likes, photoURL});
-      this.props.history.push("/user");
+      this.props.setEdit(false);
     } catch (error) {
       console.error('there has been an error', error.message);
     }   
@@ -112,4 +112,4 @@ class EditPage extends React.Component {
   }
 }
 
-export default EditPage;
+export default Edit;

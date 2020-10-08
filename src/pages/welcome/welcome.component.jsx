@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 
 import Login from '../../components/login/login.component';
 import Register from '../../components/register/register.component';
@@ -7,7 +6,7 @@ import Register from '../../components/register/register.component';
 import './welcome.styles.scss';
 
 const WelcomePage = () => {
-  const [userState, setUserState] = useState(null)
+  const [userState, setUserState] = useState(null);
   return (
     <div>
       <div id="welcomepage">

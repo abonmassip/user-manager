@@ -11,13 +11,13 @@
     input {
       border: none;
       border-bottom: 1px solid black;
+      color: #2157a8;
       margin: 10px;
       text-align: center;
       padding: 10px;
       width: 400px;
 
       &::placeholder {
-        color: #666;
         text-transform: uppercase;
       }
     }
