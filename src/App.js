@@ -71,13 +71,6 @@ class App extends React.Component {
               <UserPage {...props} currentUser={currentUser} />
             )}
           />
-          {/* <Route
-            exact
-            path="/edit"
-            render={(props) => (
-              <EditPage {...props} currentUser={currentUser} />
-            )}
-          /> */}
         </Switch>
       </div>
     );

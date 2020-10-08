@@ -7,32 +7,11 @@
     margin: 10px;
   }
 
-  img {
-    border: 1px solid #2157a8;
-    max-width: 500px;
-    max-height: 500px;
-    margin: 10px;
-    border-radius: 100%;
-
-    &:hover {
-      border-radius: 0%;
-    }
-
-    transition: all 0.2s;
-  }
   .highlight {
     color: #2157a8;
     font-weight: bold;
   }
-  #avatar {
-    text-align: center;
-    margin: 10px;
-    p {
-      margin: 0;
-    }
-  }
-  .edit {
-  }
+
   input {
     border: none;
     text-align: center;

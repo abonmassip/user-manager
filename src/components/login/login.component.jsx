@@ -37,6 +37,7 @@ class Login extends React.Component {
 
     return (
       <div id="loginform">
+        <button type="button" onClick={signInWithGoogle}>Sign in with Google</button>
         <form action="">
           <h1>Login!</h1>
           <input
@@ -59,8 +60,6 @@ class Login extends React.Component {
           />
           <div className="buttons">
             <button type="submit" onClick={this.handleSubmit}>LOGIN</button>
-            <span>or</span>
-            <button type="button" onClick={signInWithGoogle}>Sign in with Google</button>
           </div>
         </form>
       </div>

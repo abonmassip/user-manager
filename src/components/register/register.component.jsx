@@ -75,6 +75,7 @@ class Register extends React.Component {
     
     return (
       <div id="registerform">
+        <button type="button" onClick={signInWithGoogle}>Sign in with Google</button>
         <form action="">
           <h1>Register!</h1>
           <input
@@ -132,8 +133,6 @@ class Register extends React.Component {
           <span className="required">* = Required fields</span>
           <div className="buttons">
             <button type="submit" onClick={this.handleSubmit}>REGISTER</button>
-            <span>or</span>
-            <button type="button" onClick={signInWithGoogle}>Sign in with Google</button>
           </div>
         </form>
       </div>

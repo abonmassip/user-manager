@@ -12,7 +12,7 @@
 
   .user {
     &:hover {
-      transform: scale(1.2);
+      transform: scale(1.1) rotate(3deg);
     }
 
     transition: all 0.2s;
@@ -20,6 +20,7 @@
     img {
       max-width: 200px;
       border-radius: 10px;
+      margin: 0;
     }
     .name {
       background-color: rgba(0, 0, 0, 0.4);

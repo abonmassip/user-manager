@@ -1,5 +1,7 @@
 import React from 'react';
 
+import noAvatar from '../../assets/no-avatar.jpg';
+
 import { getUsersList } from '../../firebase/firebase.utils';
 
 import './users-list.styles.scss';
@@ -44,7 +46,7 @@ class UsersList extends React.Component {
               {
                 usersList.map(({id, displayName, photoURL}) => (
                   <div className="user" key={id}>
-                    <img src={photoURL} alt="avatar" />
+                    <img src={photoURL ? photoURL : noAvatar} alt="avatar" />
                     <p className="name">{displayName}</p>
                   </div>
                 ))
