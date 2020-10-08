@@ -4,7 +4,7 @@ import { auth, signInWithGoogle } from '../../firebase/firebase.utils';
 
 import './login.styles.scss';
 
-class LoginPage extends React.Component {
+class Login extends React.Component {
 
   initialState = {
     email: '',
@@ -38,7 +38,7 @@ class LoginPage extends React.Component {
     return (
       <div id="loginform">
         <form action="">
-          <h1>Login here!</h1>
+          <h1>Login!</h1>
           <input
             type="email"
             name="email"
@@ -68,4 +68,4 @@ class LoginPage extends React.Component {
   }
 }
 
-export default LoginPage;
+export default Login;

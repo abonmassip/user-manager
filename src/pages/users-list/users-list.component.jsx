@@ -51,8 +51,8 @@ class UsersList extends React.Component {
               }
             </div>
           ) : (
-            <div>
-              <h1 className="alert"><span>⚠</span></h1>
+            <div className="alert">
+              <h1 className="red">Error <span>⚠</span></h1>
               <h2>You need to be a registered user</h2>
             </div>
           )

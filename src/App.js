@@ -3,8 +3,6 @@ import { Route, Switch, Redirect } from 'react-router-dom';
 
 import Header from './components/header/header.component';
 import WelcomePage from './pages/welcome/welcome.component';
-import RegisterPage from './pages/register/register.component';
-import LoginPage from './pages/login/login.component';
 import UsersList from './pages/users-list/users-list.component';
 import UserPage from './pages/user/user.component';
 import EditPage from './pages/edit/edit.component';
@@ -60,8 +58,8 @@ class App extends React.Component {
         }
         <Switch>
           <Route exact path="/" component={WelcomePage} />
-          <Route exact path="/register" component={RegisterPage} />
-          <Route exact path="/login" component={LoginPage} />
+          {/* <Route exact path="/register" component={RegisterPage} />
+          <Route exact path="/login" component={LoginPage} /> */}
           <Route
             exact
             path="/userslist"

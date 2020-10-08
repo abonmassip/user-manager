@@ -8,7 +8,7 @@ import {
 
 import './register.styles.scss';
 
-class RegisterPage extends React.Component {
+class Register extends React.Component {
 
   initialState = {
     displayName: '',
@@ -76,7 +76,7 @@ class RegisterPage extends React.Component {
     return (
       <div id="registerform">
         <form action="">
-          <h1>Register here!</h1>
+          <h1>Register!</h1>
           <input
             type="text"
             name="displayName"
@@ -141,4 +141,4 @@ class RegisterPage extends React.Component {
   }
 }
 
-export default RegisterPage;
+export default Register;
