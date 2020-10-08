@@ -1,0 +1,39 @@
+#userpage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  p {
+    margin: 10px;
+  }
+
+  img {
+    border: 1px solid orange;
+    max-width: 80vw;
+    margin: 10px;
+    border-radius: 100%;
+
+    &:hover {
+      border-radius: 0%;
+    }
+
+    transition: all 0.2s;
+  }
+  .highlight {
+    color: orange;
+    font-weight: bold;
+  }
+  #avatar {
+    text-align: center;
+    margin: 10px;
+    p {
+      margin: 0;
+    }
+  }
+  .edit {
+  }
+  input {
+    border: none;
+    text-align: center;
+  }
+}

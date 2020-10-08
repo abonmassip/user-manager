@@ -1,0 +1,42 @@
+#userslist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#usergrid {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  grid-template-rows: 200px 200px 200px;
+  gap: 30px;
+
+  .user {
+    &:hover {
+      transform: scale(1.2);
+    }
+
+    transition: all 0.2s;
+
+    img {
+      max-width: 200px;
+      border-radius: 10px;
+    }
+    .name {
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 5px;
+      margin: 0;
+      width: 100%;
+      font-size: 1em;
+      color: white;
+      font-weight: bold;
+      position: relative;
+      top: -35px;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+  }
+}
+
+.alert {
+  color: red;
+}
