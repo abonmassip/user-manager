@@ -9,7 +9,7 @@ import './user.styles.scss';
 const UserPage = ({ currentUser }) => {
   const [edit, setEdit] = useState(false);
  
-  if(!currentUser)return <Redirect to="/" />;
+  if(!currentUser) return <Redirect to="/" />;
   
   const { displayName, email, photoURL, likes, createdAt } = currentUser;
 

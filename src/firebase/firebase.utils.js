@@ -53,13 +53,6 @@ export const editUserProfileDocument = async (userId, additionalData) => {
   }
 }
 
-// export const getUsersList = async () => {
-//   const usersListRef = firestore.collection(`users`);
-//   const snapShot = await usersListRef.get();
-//   const usersList = await snapShot.docs;
-
-//   return usersList;
-// }
 export const getUsersList = async () => {
   const usersSnapshot = await firestore.collection(`users`).get();
   let usersList = [];

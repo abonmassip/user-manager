@@ -53,7 +53,7 @@ class App extends React.Component {
         {
           currentUser
             ? (<Redirect to="/user" />)
-            : (<Redirect to ="/"/>)
+            : ''
         }
         <Switch>
           <Route exact path="/" component={WelcomePage} />
